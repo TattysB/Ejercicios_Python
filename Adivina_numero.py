@@ -6,7 +6,17 @@
 
 numero_secreto= 15
 
+def adivinar_numero():
+    """
+    Esta función permite al usuario adivinar un número secreto entre 1 y 100.
+    El usuario recibe pistas si su intento es mayor o menor que el número secreto.
 
+     Args:
+        numero_usuario (int): Numero a adivinar
+
+    Returns:
+        El numero adivinado (int)
+    """
 while True:
     usuario = int(input("Ingrese el numero secreto del 1 al 100: "))
     if usuario > 1 and usuario < 100:
