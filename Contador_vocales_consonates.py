@@ -29,7 +29,7 @@ def contador (frase):
 for i  in frase:
     if i in vocal:
         contador_vocales+=1
-        if i in vocal:
+    else :
            contador_consonantes+=1
 
 print(f"Vocales: {contador_vocales} consonantes: {contador_consonantes}")
