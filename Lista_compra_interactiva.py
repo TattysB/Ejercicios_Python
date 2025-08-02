@@ -12,11 +12,11 @@ def gestinar_compras(menu):
     Esta función nos sirve para agregar,eleiminar y listar un item.
 
     Args:
-        menu (list): Lista con las funciones
+    menu (list): Lista con las funciones
 
-         lista_compras (list): Lista vacia donde guarda los item que se agrega
+    lista_compras (list): Lista vacia donde guarda los item que se agrega
 
-         item (str): Item que se agrega en la lista
+    item (str): Item que se agrega en la lista
 
 
     Returns:

@@ -13,10 +13,10 @@ def palindromo(frase):
     Tambien ignora espacios y caracteres especiales,diferencia entre mayusculas y minusculas.
 
     Args:
-        frase  (str): una palabra o frase
+    frase  (str): una palabra o frase
 
     Returns:
-        retorna si es o no un palindromo (bool)
+     retorna si es o no un palindromo (bool)
 
 
     """
