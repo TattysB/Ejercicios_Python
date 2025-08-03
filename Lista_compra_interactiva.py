@@ -14,7 +14,7 @@ def gestinar_compras(menu):
     Args:
     menu (list): Lista con las funciones
 
-    lista_compras (list): Lista vacia donde guarda los item que se agrega
+        lista_compras (list): Lista vacia donde guarda los item que se agrega
 
     item (str): Item que se agrega en la lista
 
