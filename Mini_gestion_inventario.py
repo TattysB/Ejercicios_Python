@@ -10,13 +10,18 @@
 
 inventario=[] #Lista vacia que almacenara cada producto
 
-def agregar_producto():
+def agregar_producto(precio,cantidad):
 
     """
     Agrega un nuevo producto al inventario.
 
     Solicita a la persona el nombre,precio y cantidad del producto,
     luego lo agrega como un diccionario a la lista de inventario
+
+    Args:
+        precio (float): precio del producto
+        cantidad (int): cantidad del producto
+
 
     """
     nombre=input("Ingrese el nombre del producto: ").strip()
@@ -35,13 +40,16 @@ def agregar_producto():
         print("Valores numericos no válidos para precio y cantidad.")
 
 
-def realizar_venta():
+def realizar_venta(cantidad_vendida):
 
     """
     Realiza una venta y actualiza la cantidad del producto en el inventario.
 
     Solicita el nombre del producto y la cantidad a vender.
     Si el producto existe y hay sufuciente cantidad,el inventario se actualiza.
+
+    Args:
+        cantidad_vendida (int): cantidad del producto
 
     """
     nombre=input("Ingrese el nombre del producto que se va a vender: ").strip()
@@ -71,6 +79,8 @@ def mostrar_inventario():
     Muestra todos los productos disponibles en el inventario.
 
     Recorre la lista de procustos e imprime nombre,precio y cantidad del producto.
+
+
     """
 
     if not inventario:#Si la lista llega estar vacia se manda un mensaje
@@ -87,6 +97,7 @@ def mostrar_inventario():
 def menu():
     """
     Muestra el menu principal y interactua con el usuario hasta que el decida salir.
+
 
     """
 
