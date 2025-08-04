@@ -29,8 +29,6 @@ def conversor_unidades():
 
         None: Si no se encuentra una conversion disponible
 
-
-
     """
 
 def convertir_unidades(cantidad,unidad_origen,unidad_destino): #se define la función y le damos 3 parametros
@@ -38,9 +36,12 @@ def convertir_unidades(cantidad,unidad_origen,unidad_destino): #se define la fun
 
     if lista in unidades_conversion:
         unidad=unidades_conversion[lista]
-        return cantidad*unidad #Devuelve el resulado de la conversion es decir la cantidad multiplicada por la munidad
+        return cantidad*unidad #Devuelve el resulado de la conversion es
+                               # decir la cantidad multiplicada por la munidad
     else:
-        return f"Conversion no diponible de la {unidad_origen} a {unidad_destino}" #Si no existe dentro de la lista devuelve un error indicando que no se puede hacer la conversion
+        return (f"Conversion no diponible"
+                f" de la {unidad_origen} a {unidad_destino}") #Si no existe dentro de la lista devuelve un error
+                                                             # indicando que no se puede hacer la conversion
 
 try:
     cantidad=float(input("Ingrese la cantidad que desea convertir: "))
@@ -50,7 +51,8 @@ try:
     resultado=convertir_unidades(cantidad,unidad_origen,unidad_destino) #Se llama la función con los datos que ingresa la persona
 
     if resultado is not None: #si el resulado es valido (no es None=ausencia),muestra el resultado
-        print(f"\n La cantidad que ingreso es {cantidad}, la unidad de origen que ingreso es  {unidad_origen} y esto equivale a {resultado:.2f} {unidad_destino}.")
+        print(f"\n La cantidad que ingreso es {cantidad}, la unidad de origen que ingreso "
+              f"es  {unidad_origen} y esto equivale a {resultado:.2f} {unidad_destino}.")
 
     else:
         print(f"La conversión que intenta hacer con {unidad_origen} a {unidad_destino} no esta disponible.")
